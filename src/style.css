@@ -2,29 +2,52 @@
     font-family: TT Lakes;
     src: url(../assets/TTLakes-Regular.ttf);
 }
+
 @font-face {
     font-family: TT Lakes-Bold;
     src: url(../assets/TTLakes-Bold.ttf);
 }
+
 @font-face {
     font-family: TT Lakes-Medium;
     src: url(../assets/TTLakes-Medium.ttf);
 }
+
 body {
     width: 320px;
     margin: 0;
     padding: 0;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
     margin: 18px 24px 0 24px;
 }
+
 .button {
     border: none;
     background-color: transparent;
     padding: 0;
+    width: 40px;
+    height: 40px;
 }
+.button-burger {
+    background-image: url("../assets/burger.svg");
+}
+.button-search {
+    background-image: url("../assets/search.svg");
+}
+.button-call {
+    background-image: url("../assets/call.svg");
+}
+.button-chat {
+    background-image: url("../assets/chat.svg");
+}
+.button-profile {
+    background-image: url("../assets/profile.svg");
+}
+
 .button:hover {
     opacity: 0.7;
     transition: 0.5s;
@@ -36,18 +59,22 @@ body {
     margin-left: 16px;
 }
 
-
-.main {
+.nav {
+    font-family: "TT Lakes-Medium", sans-serif;
+    list-style: none;
+    padding: 0;
     margin-top: 42px;
     margin-bottom: auto;
     margin-left: 24px;
 }
-.main__list {
-    font-family: "TT Lakes-Medium",sans-serif;
+
+.nav__list {
+    font-family: "TT Lakes-Medium", sans-serif;
     list-style: none;
     padding: 0;
 }
-.main__list:nth-child(1)::before {
+
+.nav__list:nth-child(1)::before {
     content: "";
     position: absolute;
     border-radius: 0 5px 5px 0;
@@ -58,9 +85,10 @@ body {
     top: 112px;
 }
 
-.main__item {
+.nav__item {
     padding-bottom: 32px;
 }
+
 .link {
     text-decoration: none;
     color: #1B1C21;
@@ -68,26 +96,30 @@ body {
 }
 
 .footer {
-    font-family: "TT Lakes-Medium",sans-serif;
+    font-family: "TT Lakes-Medium", sans-serif;
     margin-left: 24px;
 }
+
 .footer__list {
     padding: 0;
     list-style: none;
     display: flex;
     gap: 16px;
 }
+
 .footer__link {
     display: block;
     margin-bottom: 12px;
 }
+
 .footer__lang {
     padding: 0;
     display: flex;
     list-style: none;
     gap: 7px;
 }
+
 .phone {
-    font-family: "TT Lakes-Bold",sans-serif;
+    font-family: "TT Lakes-Bold", sans-serif;
 }
 
